@@ -2,7 +2,7 @@
 
 Dates	|Monday	|Wednesday
 -------|------------- | ------------- 
-Aug 23-25 ||
+Aug 23-25 |zoom.earth and IDV walk-through of current weather, student intros| Stuff in Space on hypothes.is 
 30-Sep1	||
 6-8 Sep||
 13-15	||
