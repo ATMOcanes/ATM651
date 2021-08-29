@@ -3,7 +3,7 @@
 Dates	|Monday	|Wednesday
 -------|------------- | -------------
 Week1| Welcome to grad school. Introductions. Course GitHub site, Hypothesis, IDV. Read/annotate Mapes sections 1.1-1.2 | Math review: Coordinates, the power of functions: T(x,y,z,t).  Physics review: Units. Assign to read/annotate Feynman on Vectors and Vector Fields.
-Week2| SI units. Derivatives and integrals, incl. of vector fields (HW1 help).| Mass flux and mass budget (continuity). From there, anything else per-unit-mass. Enough equations for # of unknowns yet? Assign reading: WH chapter 0, rest of Stuff in Space, problems from there (HW2). 
+Week2| SI units. Derivatives and integrals, incl. of vector fields (HW1 help).| Mass flux and mass budget (continuity). From there, anything else per-unit-mass. Enough equations for # of unknowns yet? Assign reading: WH Ch 0, Ch 7.1, rest of Stuff in Space. Assign problems from there (HW2). 
 Week3|LABOR DAY | WH ch1 questions: general atmosci. Review equation set. What is pressure? HW2. 
 Week4| "Transport": Lagrangian view (*material* derivative d/dt, tracers and trajectories). Eulerian view (*partial* time derivative and *local* tendencies) - advection form, flux convergence form. Diffusion.| Vorticity as a conserved quantity. Assign MIT films, & to make hypothes.is annotations. 
 Week5|Vortex interactions: a game of pinball among Rankine vortices. Vorticity film discussion. | Conservation of abs vorticity --> [*Rossby waves*](https://journals.ametsoc.org/mwr/article/146/7/1965/103117/Rossby-Wave-Packets-on-the-Midlatitude-Waveguide-A) with westward phase speed but eastward group (energy) speed *proportional to wavelength squared*.   
