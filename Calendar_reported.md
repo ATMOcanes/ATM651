@@ -2,8 +2,8 @@
 
 Dates	|Monday	|Wednesday
 -------|------------- | ------------- 
-Aug 23-25 |zoom.earth and IDV walk-through of current weather, student intros| Stuff in Space on hypothes.is. Power of parentheses: T(x,y,z,t). Assigned [HW1](), pointers to Feynman lectures on vectors, vec fields, derivs & integrals. 
-30-Sep1	|Derivatives of functions. Integrals as anti-derivatives. From 1D to 2D,3D. HW1 help ([Vector field grapher](https://user.mendelu.cz/marik/EquationExplorer/vectorfield.html) ). |
+Aug 23-25 |zoom.earth and IDV walk-through of current weather, student intros| Counting heads: Stuff in Space on hypothes.is. Power of parentheses: T(x,y,z,t). Assigned [HW1](https://github.com/ATMOcanes/ATM651_2021/tree/master/Week%20copy%201), with pointers to Feynman lectures on vectors, vec fields, derivs & integrals. 
+30-Sep1	|Game: SI Units Committee of French Revolution. Derivatives of functions. Integrals as anti-derivatives. From 1D to 2D,3D. HW1 help ([Vector field grapher](https://user.mendelu.cz/marik/EquationExplorer/vectorfield.html) ). |
 6-8 Sep||
 13-15	||
 20-22   ||
