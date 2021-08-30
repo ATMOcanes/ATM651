@@ -106,6 +106,9 @@ def pveq(w, t, G, difft):
 
 
 
+#calculate the coordinates of the common center of circulation
+Circcenterx=np.sum(np.asarray(G[:])*np.asarray(x[:]))/np.sum(np.asarray(G[:]))
+Circcentery=np.sum(np.asarray(G[:])*np.asarray(y[:]))/np.sum(np.asarray(G[:]))
 
 # Create the time samples for the output of the ODE solver.
 t = [stoptime * float(i) / (numpoints - 1) for i in range(numpoints)]
