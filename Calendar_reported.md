@@ -7,15 +7,16 @@ Aug 23-25 |zoom.earth and IDV walk-through of current weather, student intros| C
 Week3|LABOR DAY | Transport on whiteboard: Eulerian (control volume at x,y,z) vs. Lagrangian (chain rule) for moving parcel with position x_p(t),y_p(t),z_p(t). An equation set for fluids. What is pressure? HW2 due. Assign reading: WH Ch 0, Ch 7.1. Have answers in class for all qualitative questions (7.5 a-z). If not answers, then questions! Tag questions with hypothes.is annotation. 
 13-15	|Wallace and Hobbs Ch7 section 1: Kinematics of 2D flow patterns. [Assignment on colab](https://colab.research.google.com/drive/1uY31iYu5dZ5E9F-UoYrpWQf4UnJLvoKG?usp=sharing), due before weekend. | Kinematics illustrations and meanings: div <--> dw/dz, d/dt(zeta)=0, and trajectories illustrate deformation. Read WH Ch7.2 up to 7.2.5. 
 20-22   |Discuss [apparent forces](https://github.com/ATMOcanes/ATM651_2021/blob/master/Week%20copy%205/ApparentForces.pdf), pencil taped to globe. Reading assigned: *through* 7.2.8. **Please make at least one annotation per reading assignment.** Assign HW4 (tags in [hypothes.is group](https://hypothes.is/groups/iMnrZwXz/atm651-2021)), due in 1 week.| A few words on JuPyGitHub ecosystem. Demo Monday at 10:00. Coriolis Force is *real*. Equation of motion **T + C + P + F**, concept of balance. WH ch7 geostrophic, frictional, gradient, etc. Thermal wind. 
-27-29	||
-Oct 4-6	||
-11-13	||
-18-20	||
-25-27	||
-Nov 1-3	||
-8-10	||
-15-17	||
-22-24	||
-29-Dec1	||
+27-29	|HW4 due, any problem problems? book qualitative questions. Thermal wind, *cool vs. warm core* cyclones.| instability  
+Oct 4-6	|vorticity, reading+movies: bring time-stamped questions for class|PV concept, point-vortex interactions, hand out last years exam/review sheet
+11-13	|review for exam | exam (enough "grammar" now)
+18-20	|PE set, thermodynamic eq, isentropic surfaces| PE set --> energy budgets
+25-27	|PE set, logic of model structure| PE set, model realitites 
+Nov 1-3	|logic of data assimilation | logic of diagnosis 
+8-10	|Midlatitude storms (WH Ch8)| Smaller scales (Ch9) 
+15-17	|Eddies and PBL|turbulence
+22-24	|THANXGIVING|THANXGIVING
+29-Dec1	|Projects and reading resources|
 6-8	||
-13-15||
+13-15||Project presentations
+FINALS|Project presentations|
