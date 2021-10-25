@@ -18,5 +18,4 @@ Nov 1-3	| Quasi-Geostrophic Omega Equation (Kirtman lecture), assignment: [HW6](
 22-24	|THANXGIVING|THANXGIVING
 29-Dec1	|Projects and reading resources|
 6-8	||
-13-15||Project presentations
-FINALS|Project presentations|
+13-15||Project presentations (Final Exam period) Thurs, Dec 16, 11am nominal!
