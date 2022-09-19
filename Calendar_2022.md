@@ -9,7 +9,7 @@ Sep 12-14 |[Lecture about](https://github.com/ATMOcanes/ATM651/blob/master/Week1
 Sep 19-21|Fiona in Puerto Rico, IDV data bath (**ASSIGNMENT: Install and try it, for projects**). Where did Fiona's vorticity come from? Stare at d/dt(vort) = 0 + complications to answer. HW2 back, a few clarifications. Finish that First Law trick, make it look like d/dt(warmth) = 0 + diabatic. | Come prepared to discuss vorticity [movies](http://web.mit.edu/hml/ncfmf.html), Parts 1&2. Each student please jot down at least one time-stamped question or classroom discussion point. 
 Sep 26-28	||  
 Oct 3-5 ||
-Oct 10-12	||
+Oct 10-12	|Exam? (prof out but on zoom)|
 Oct 17-19	|| 
 Oct 24-26	||
 Nov 0-2	|| 
