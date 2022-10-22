@@ -15,7 +15,7 @@ Oct 24-26	|[MindMap of whole class, ATM651_2022.mindnode](https://github.com/ATM
 Nov 0-2	|| 
 Nov 7-9	|| 
 Nov 14-16	||
-Nov 21-23	|THANXGIVING|THANXGIVING
+Nov 21-23	|Online Class [link](https://miami.zoom.us/j/96509627719?pwd=MkN2bW5QS1YxVE1ESWlLR0tIMzVNdz09)|THANXGIVING
 Nov 28-30	||
 Dec 5-7	|Project clinic availability on zoom| Project clinic availability on zoom
 Final Exam time slot|Project Due |  
