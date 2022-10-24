@@ -17,7 +17,7 @@ Nov 7-9	||
 Nov 14-16	||
 Nov 21-23	|Online Class [link](https://miami.zoom.us/j/96509627719?pwd=MkN2bW5QS1YxVE1ESWlLR0tIMzVNdz09)|THANXGIVING
 Nov 28-30	||
-Dec 5-7	|Project clinic: screenshare breakouts on zoom|Zoom project clinic or early project presentations (10min x 6?)| 
-Fri, Dec 9| 11-1:30 is our final exam slot: more presentations OR RESCHEDULE to following week --> | (10min x 11, in person or zoom) 
+Dec 5-7	|Project clinic: screenshare breakouts on zoom|Zoom project clinic or early project presentations (10min x 6?), Fri Dec 9 11-1:30 is our final exam slot: more presentations OR RESCHEDULE to following week? 
+Final session | (10min x 11) | 
 
 
