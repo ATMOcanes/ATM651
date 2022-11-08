@@ -515,6 +515,9 @@
                                                                     </property>
                                                                 </object>
                                                             </property>
+                                                            <property name="CollapseLegend">
+                                                                <boolean>true</boolean>
+                                                            </property>
                                                             <property name="DisplayId">
                                                                 <string><![CDATA[planviewcolor]]></string>
                                                             </property>
@@ -1006,7 +1009,7 @@
                         <string><![CDATA[Global Thermal IR composite images]]></string>
                     </property>
                     <property name="Descriptor">
-                        <object class="ucar.unidata.data.DataSourceDescriptor" id="id104">
+                        <object class="ucar.unidata.data.DataSourceDescriptor">
                             <property name="Properties">
                                 <object class="java.util.Hashtable"/>
                             </property>
@@ -1142,135 +1145,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.data.imagery.AddeImageDataSource">
-                    <property name="EleMag">
-                        <int>1</int>
-                    </property>
-                    <property name="LineMag">
-                        <int>1</int>
-                    </property>
-                    <property name="ChoiceName">
-                        <string><![CDATA[2_Band1_BRIT]]></string>
-                    </property>
-                    <property name="ImageList">
-                        <object class="java.util.ArrayList"/>
-                    </property>
-                    <property name="Name">
-                        <string><![CDATA[Manually Digitized Radar]]></string>
-                    </property>
-                    <property name="Descriptor">
-                        <object idref="id104"/>
-                    </property>
-                    <property name="Properties">
-                        <object class="java.util.Hashtable">
-                            <method name="put">
-                                <string><![CDATA[bandinfo]]></string>
-                                <object class="java.util.ArrayList">
-                                    <method name="add">
-                                        <object class="ucar.unidata.data.imagery.BandInfo">
-                                            <property name="BandNumber">
-                                                <int>1</int>
-                                            </property>
-                                            <property name="Sensor">
-                                                <int>2</int>
-                                            </property>
-                                            <property name="PreferredUnit">
-                                                <string><![CDATA[BRIT]]></string>
-                                            </property>
-                                            <property name="BandDescription">
-                                                <string><![CDATA[Band: 1]]></string>
-                                            </property>
-                                            <property name="CalibrationUnits">
-                                                <object class="java.util.Vector">
-                                                    <method name="add">
-                                                        <object class="ucar.unidata.util.TwoFacedObject">
-                                                            <property name="Id">
-                                                                <string><![CDATA[RAW]]></string>
-                                                            </property>
-                                                            <property name="Label">
-                                                                <string><![CDATA[Raw]]></string>
-                                                            </property>
-                                                        </object>
-                                                    </method>
-                                                    <method name="add">
-                                                        <object class="ucar.unidata.util.TwoFacedObject">
-                                                            <property name="Id">
-                                                                <string><![CDATA[BRIT]]></string>
-                                                            </property>
-                                                            <property name="Label">
-                                                                <string><![CDATA[Brightness]]></string>
-                                                            </property>
-                                                        </object>
-                                                    </method>
-                                                </object>
-                                            </property>
-                                        </object>
-                                    </method>
-                                </object>
-                            </method>
-                            <method name="put">
-                                <string><![CDATA[data name]]></string>
-                                <string><![CDATA[Band: 0]]></string>
-                            </method>
-                            <method name="put">
-                                <string><![CDATA[name]]></string>
-                                <string><![CDATA[Manually Digitized Radar]]></string>
-                            </method>
-                            <method name="put">
-                                <string><![CDATA[prop.chooserclassname]]></string>
-                                <string><![CDATA[ucar.unidata.idv.chooser.adde.AddeImageChooser]]></string>
-                            </method>
-                            <method name="put">
-                                <string><![CDATA[Chooser_Do_Time_Matching]]></string>
-                                <java.lang.Boolean>true</java.lang.Boolean>
-                            </method>
-                            <method name="put">
-                                <string><![CDATA[allBands]]></string>
-                                <object class="java.util.Hashtable">
-                                    <method name="put">
-                                        <java.lang.Integer>1</java.lang.Integer>
-                                        <serial class="edu.wisc.ssec.mcidas.AreaDirectory">
-<![CDATA[rO0ABXNyACJlZHUud2lzYy5zc2VjLm1jaWRhcy5BcmVhRGlyZWN0b3J5zS2GL2/2fioCABBJABJjYWxUeXBlU2NhbGVGYWN0b3JEAA5jZW50ZXJMYXRpdHVkZUQAGGNlbnRlckxhdGl0dWRlUmVzb2x1dGlvbkQAD2NlbnRlckxvbmdpdHVkZUQAGWNlbnRlckxvbmdpdHVkZVJlc29sdXRpb25bAAViYW5kc3QAAltJWwAHY2FsSW5mb3QAE1tMamF2YS91dGlsL1ZlY3RvcjtMAAdjYWxUeXBldAASTGphdmEvbGFuZy9TdHJpbmc7TAALY2FsVHlwZVVuaXRxAH4AA1sAA2RpcnEAfgABTAAEbWVtb3EAfgADTAALbm9taW5hbFRpbWV0ABBMamF2YS91dGlsL0RhdGU7WwAHc2Vuc29yc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAdzcmNUeXBlcQB+AANMAAtzcmNUeXBlT3JpZ3EAfgADTAAJc3RhcnRUaW1lcQB+AAR4cAAAAAF/+AAAAAAAAH/4AAAAAAAAf/gAAAAAAAB/+AAAAAAAAHVyAAJbSU26YCZ26rKlAgAAeHAAAAABAAAAAXB0AARCUklUcHVxAH4ABwAAAEAAAABgAAAABAAAAAIAAcKcAAMkTAAAAAb///9hAAAAAAAAAV4AAAKAAAAAAQAAAAUAAAAEAAAAAQAAAAAAAAAAAAHCnAADNkgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAABNRFIgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAAAIz0AAAMAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcKcAAAAAAAAAAAAAAAAAAAAAAAAAABWSVNSQlJJVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAANdAAgTURSICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzcgAOamF2YS51dGlsLkRhdGVoaoEBS1l0GQMAAHhwdwgAAAFRy3zqIHh1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAGcdAAMRGVyaXZlZCBEYXRhdAANVGVzdCBQYXR0ZXJuc3QACEdyYXBoaWNzdAANTWlzY2VsbGFuZW91c3QAFVBEVVMgTWV0ZW9zYXQgdmlzaWJsZXQAFlBEVVMgTWV0ZW9zYXQgaW5mcmFyZWR0ABlQRFVTIE1ldGVvc2F0IHdhdGVyIHZhcG9ydAAFUmFkYXJ0ABtNaXNjZWxsYW5lb3VzIEFpcmNyYWZ0IERhdGF0AAxSYXcgTWV0ZW9zYXR0AA9Db21wb3NpdGUgaW1hZ2V0ABBUb3BvZ3JhcGh5IGltYWdldAALR01TIHZpc2libGV0AAxHTVMgaW5mcmFyZWR0AA1BVFMgNiB2aXNpYmxldAAOQVRTIDYgaW5mcmFyZWR0AA1TTVMtMSB2aXNpYmxldAAOU01TLTEgaW5mcmFyZWR0AA1TTVMtMiB2aXNpYmxldAAOU01TLTIgaW5mcmFyZWR0AA5HT0VTLTEgdmlzaWJsZXQAD0dPRVMtMSBpbmZyYXJlZHQADkdPRVMtMiB2aXNpYmxldAAPR09FUy0yIGluZnJhcmVkdAAOR09FUy0zIHZpc2libGV0AA9HT0VTLTMgaW5mcmFyZWR0ABRHT0VTLTQgdmlzaWJsZSAoVkFTKXQAJUdPRVMtNCBpbmZyYXJlZCBhbmQgd2F0ZXIgdmFwb3IgKFZBUyl0ABRHT0VTLTUgdmlzaWJsZSAoVkFTKXQAJUdPRVMtNSBpbmZyYXJlZCBhbmQgd2F0ZXIgdmFwb3IgKFZBUyl0AA5HT0VTLTYgdmlzaWJsZXQAD0dPRVMtNiBpbmZyYXJlZHQAKUdPRVMtNyB2aXNpYmxlLCBCbG9jayAxIHN1cHBsZW1lbnRhbCBkYXRhdAAPR09FUy03IGluZnJhcmVkdAAFRlktMkJ0AAVGWS0yQ3QABUZZLTJEdAAFRlktMkV0AAVGWS0yRnQABUZZLTJHdAAFRlktMkh0AA5USVJPUy1OIChQT0VTKXQABk5PQUEtNnQABk5PQUEtN3QABk5PQUEtOHQABk5PQUEtOXQABVZlbnVzdAAJVm95YWdlciAxdAAJVm95YWdlciAydAAHR2FsaWxlb3QAFkh1YmJsZSBzcGFjZSB0ZWxlc2NvcGV0AAVNU0ctMXQABU1TRy0ydAAFTVNHLTN0AApNZXRlb3NhdC0zdAAKTWV0ZW9zYXQtNHQACk1ldGVvc2F0LTV0AApNZXRlb3NhdC02dAAKTWV0ZW9zYXQtN3QAAHQAB05PQUEtMTB0AAdOT0FBLTExdAAHTk9BQS0xMnQAB05PQUEtMTN0AAdOT0FBLTE0dAAHTk9BQS0xNXQAB05PQUEtMTZ0AAdOT0FBLTE3dAAHTk9BQS0xOHQAB05PQUEtMTl0AA1HT0VTIDggaW1hZ2VydAAOR09FUyA4IHNvdW5kZXJ0AA1HT0VTIDkgaW1hZ2VydAAOR09FUyA5IHNvdW5kZXJ0AA5HT0VTIDEwIGltYWdlcnQAD0dPRVMgMTAgc291bmRlcnQADkdPRVMgMTEgaW1hZ2VydAAPR09FUyAxMSBzb3VuZGVydAAOR09FUyAxMiBpbWFnZXJ0AA9HT0VTIDEyIHNvdW5kZXJ0AARFUkJFcQB+AEt0AAVHTVMtNHQABUdNUy01dAAITVRTQVQtMVJ0AAdNVFNBVC0ydAAKSGltYXdhcmktOHQACERNU1AgRi04dAAIRE1TUCBGLTl0AAlETVNQIEYtMTB0AAlETVNQIEYtMTF0AAlETVNQIEYtMTJ0AAlETVNQIEYtMTN0AAlETVNQIEYtMTR0AAlETVNQIEYtMTV0AAVGWS0xQnQABUZZLTFDdAAFRlktMURxAH4AS3EAfgBLcQB+AEt0AAlURVJSQSBMMUJ0AAlURVJSQSBDTER0AAlURVJSQSBHRU90AAlURVJSQS1BRVJxAH4AS3QACVRFUlJBIFRPUHQACVRFUlJBIEFUTXQACVRFUlJBIEdVRXQACVRFUlJBIFJFVHEAfgBLdAAIQVFVQSBMMUJ0AAhBUVVBIENMRHQACEFRVUEgR0VPdAAIQVFVQSBBRVJxAH4AS3QACEFRVUEgVE9QdAAIQVFVQSBBVE10AAhBUVVBIEdVRXQACEFRVUEgUkVUcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEt0AApURVJSQSBORFZJdAAKVEVSUkEgQ1JFRnEAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEt0AAlBUVVBIE5EVkl0AAlBUVVBIENSRUZxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLdAAOR09FUyAxMyBpbWFnZXJ0AA9HT0VTIDEzIHNvdW5kZXJ0AA5HT0VTIDE0IGltYWdlcnQAD0dPRVMgMTQgc291bmRlcnQADkdPRVMgMTUgaW1hZ2VydAAPR09FUyAxNSBzb3VuZGVydAAOR09FUyAxNiBpbWFnZXJ0AA9HT0VTIDE2IHNvdW5kZXJxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3QACURNU1AgRi0xNnQACURNU1AgRi0xN3EAfgBLcQB+AEtxAH4AS3QACEFJUlMgTDFCcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLdAAKQU1TUi1FIEwxQnQAC0FNU1ItRSBSQUlOcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLdAAJS2FscGFuYS0xdAAPSU5TQVQtM0QgSW1hZ2VydAAQSU5TQVQtM0QgU291bmRlcnEAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLdAAHTWV0T3AtQXQAB01ldE9wLUJ0AAdNZXRPcC1DcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEt0AAZDT01TLTFxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3QACUxhbmRzYXQgMXQACUxhbmRzYXQgMnQACUxhbmRzYXQgM3QACUxhbmRzYXQgNHQACUxhbmRzYXQgNXQACUxhbmRzYXQgNnQACUxhbmRzYXQgN3QACUxhbmRzYXQgOHEAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLdAAPU3VvbWkgTlBQLVZJSVJTcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3QAC01FVEVPU0FULTExcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLdAAVU291dGggUG9sZSBDb21wb3NpdGVzdAAVTm9ydGggUG9sZSBDb21wb3NpdGVzcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3EAfgBLcQB+AEtxAH4AS3QAD01lZ2hhLVRyb3BpcXVlc3EAfgBLdAAEVklTUnEAfgCmc3EAfgAMdwgAAAFRxvxEAHg=]]>                                            <property name="CenterLatitude">
-                                                <double>NaN</double>
-                                            </property>
-                                            <property name="CenterLongitude">
-                                                <double>NaN</double>
-                                            </property>
-                                            <property name="CenterLatitudeResolution">
-                                                <double>NaN</double>
-                                            </property>
-                                            <property name="CenterLongitudeResolution">
-                                                <double>NaN</double>
-                                            </property>
-                                            <property name="CalInfo">
-                                                <null class="[Ljava.util.Vector;"/>
-                                            </property>
-                                        </serial>
-                                    </method>
-                                </object>
-                            </method>
-                        </object>
-                    </property>
-                    <property name="Description">
-                        <string><![CDATA[Adde Image Data Source]]></string>
-                    </property>
-                    <property name="PollingInfo">
-                        <object class="ucar.unidata.util.PollingInfo">
-                            <property name="ForFiles">
-                                <boolean>false</boolean>
-                            </property>
-                            <property name="FilePattern">
-                                <string><![CDATA[adde://.*/imagedata(/|\?).*$]]></string>
-                            </property>
-                        </object>
-                    </property>
-                    <property name="UniqueId">
-                        <string><![CDATA[sharable_1450814277453_0_6056150654076146_73]]></string>
-                    </property>
-                </object>
-            </method>
-            <method name="add">
-                <object class="ucar.unidata.data.grid.DodsGeoGridDataSource" id="id138">
+                <object class="ucar.unidata.data.grid.DodsGeoGridDataSource" id="id126">
                     <property name="EnsembleSelection">
                         <null class="java.util.List"/>
                     </property>
@@ -1370,7 +1245,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.data.grid.DodsGeoGridDataSource" id="id147">
+                <object class="ucar.unidata.data.grid.DodsGeoGridDataSource" id="id135">
                     <property name="EnsembleSelection">
                         <null class="java.util.List"/>
                     </property>
@@ -1465,7 +1340,7 @@
                     <property name="ViewManagers">
                         <object class="java.util.ArrayList">
                             <method name="add">
-                                <object class="ucar.unidata.idv.MapViewManager" id="id152">
+                                <object class="ucar.unidata.idv.MapViewManager" id="id140">
                                     <property name="MainProjection">
                                         <object class="visad.georef.TrivialMapProjection">
                                             <constructor>
@@ -1559,7 +1434,7 @@
                                         </object>
                                     </property>
                                     <property name="Foreground">
-                                        <object class="java.awt.Color" id="id159">
+                                        <object class="java.awt.Color" id="id147">
                                             <constructor>
                                                 <int>0</int>
                                                 <int>0</int>
@@ -1583,9 +1458,6 @@
                                     </property>
                                     <property name="AnimationInfo">
                                         <object class="ucar.visad.display.AnimationInfo">
-                                            <property name="Running">
-                                                <boolean>true</boolean>
-                                            </property>
                                             <property name="AnimationSetInfo">
                                                 <object class="ucar.visad.display.AnimationSetInfo">
                                                     <property name="IsTimeDriver">
@@ -1626,7 +1498,7 @@
                                         </object>
                                     </property>
                                     <property name="DisplayListFont">
-                                        <object class="java.awt.Font" id="id163">
+                                        <object class="java.awt.Font" id="id151">
                                             <constructor>
                                                 <string><![CDATA[Default]]></string>
                                                 <int>0</int>
@@ -1635,7 +1507,7 @@
                                         </object>
                                     </property>
                                     <property name="ViewDescriptor">
-                                        <object class="ucar.unidata.idv.ViewDescriptor" id="id164">
+                                        <object class="ucar.unidata.idv.ViewDescriptor" id="id152">
                                             <property name="Name">
                                                 <string><![CDATA[view_1667345132700_0_22538893175303143_10]]></string>
                                             </property>
@@ -1644,7 +1516,7 @@
                                     <property name="Aliases">
                                         <object class="java.util.ArrayList">
                                             <method name="add">
-                                                <object idref="id164"/>
+                                                <object idref="id152"/>
                                             </method>
                                         </object>
                                     </property>
@@ -1815,7 +1687,7 @@
                                         </object>
                                     </property>
                                     <property name="DisplayMatrix">
-                                        <parray class="double" length="16">0.8599631696318726,0.0,0.0,-0.25228757447508493,0.0,0.8599631696318726,0.0,0.36187251401780235,0.0,0.0,0.343985267852749,0.0,0.0,0.0,0.0,1.0</parray>
+                                        <parray class="double" length="16">0.8599631696318726,0.0,0.0,-0.33093925986834893,0.0,0.8599631696318726,0.0,0.2575386456389952,0.0,0.0,0.343985267852749,0.0,0.0,0.0,0.0,1.0</parray>
                                     </property>
                                     <property name="AspectRatio">
                                         <parray class="double" length="3">1.0,1.0,0.4</parray>
@@ -2058,7 +1930,7 @@
         <string><![CDATA[viewmanagers]]></string>
         <object class="java.util.ArrayList">
             <method name="add">
-                <object idref="id152"/>
+                <object idref="id140"/>
             </method>
         </object>
     </method>
@@ -2376,7 +2248,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id222"/>
+                        <object class="java.util.ArrayList" id="id210"/>
                     </property>
                     <property name="DisplayCategory">
                         <string><![CDATA[Maps]]></string>
@@ -2408,7 +2280,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id222"/>
+                        <object idref="id210"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -2439,7 +2311,7 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object class="java.awt.Color" id="id230">
+                                <object class="java.awt.Color" id="id218">
                                     <constructor>
                                         <int>192</int>
                                         <int>192</int>
@@ -2494,7 +2366,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id232">
+                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id220">
                     <property name="ContourInfo">
                         <object class="ucar.unidata.util.ContourInfo">
                             <property name="LineWidth">
@@ -2520,9 +2392,9 @@
                     <property name="Level">
                         <object class="ucar.unidata.util.TwoFacedObject">
                             <property name="Id">
-                                <object class="visad.Real" id="id239">
+                                <object class="visad.Real" id="id227">
                                     <constructor>
-                                        <object class="visad.RealType" id="id237">
+                                        <object class="visad.RealType" id="id225">
                                             <object class="java.util.ArrayList">
                                                 <method name="add">
                                                     <string><![CDATA[isobaric[unit:Pa]]]></string>
@@ -2558,9 +2430,6 @@
                     </property>
                     <property name="DisplayId">
                         <string><![CDATA[planviewcontour]]></string>
-                    </property>
-                    <property name="DisplayVisibility">
-                        <boolean>false</boolean>
                     </property>
                     <property name="Range">
                         <object class="ucar.unidata.util.Range">
@@ -2609,7 +2478,7 @@
                         <string><![CDATA[gpm*10]]></string>
                     </property>
                     <property name="Categories">
-                        <object class="java.util.ArrayList" id="id243">
+                        <object class="java.util.ArrayList" id="id231">
                             <method name="add">
                                 <object class="ucar.unidata.data.DataCategory">
                                     <property name="Name">
@@ -2668,7 +2537,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id251">
+                        <object class="java.util.ArrayList" id="id239">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
@@ -2713,7 +2582,7 @@
                                                             <constructor>
                                                                 <object idref="id33"/>
                                                                 <double>0.0</double>
-                                                                <object amount="0.017453292519943295" class="visad.ScaledUnit" id="id255" name="deg">
+                                                                <object amount="0.017453292519943295" class="visad.ScaledUnit" id="id243" name="deg">
                                                                     <object idref="id31"/>
                                                                 </object>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -2723,7 +2592,7 @@
                                                             <constructor>
                                                                 <object idref="id37"/>
                                                                 <double>179.5</double>
-                                                                <object idref="id255"/>
+                                                                <object idref="id243"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -2759,7 +2628,7 @@
                                         <string><![CDATA[Geopotential height @ Isobaric surface]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id260">
+                                        <object class="java.util.ArrayList" id="id248">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -2839,13 +2708,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id260"/>
+                                        <object idref="id248"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id232"/>
+                                                <object idref="id220"/>
                                             </method>
                                         </object>
                                     </property>
@@ -2907,7 +2776,7 @@
                                             <constructor>
                                                 <int>0</int>
                                                 <int>0</int>
-                                                <int>926</int>
+                                                <int>886</int>
                                                 <int>723</int>
                                             </constructor>
                                         </object>
@@ -2915,15 +2784,15 @@
                                 </object>
                             </property>
                             <property name="FromLevel">
-                                <object idref="id239"/>
+                                <object idref="id227"/>
                             </property>
                             <property name="ToLevel">
-                                <object idref="id239"/>
+                                <object idref="id227"/>
                             </property>
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id251"/>
+                        <object idref="id239"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -2956,12 +2825,12 @@
                         </object>
                     </property>
                     <property name="DisplayListColor">
-                        <object idref="id159"/>
+                        <object idref="id147"/>
                     </property>
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object class="java.awt.Color" id="id281">
+                                <object class="java.awt.Color" id="id269">
                                     <constructor>
                                         <int>192</int>
                                         <int>192</int>
@@ -3043,7 +2912,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id285">
+                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id273">
                     <property name="ContourInfo">
                         <object class="ucar.unidata.util.ContourInfo">
                             <property name="LineWidth">
@@ -3183,10 +3052,10 @@
                         <string><![CDATA[hPa]]></string>
                     </property>
                     <property name="Categories">
-                        <object idref="id243"/>
+                        <object idref="id231"/>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id300">
+                        <object class="java.util.ArrayList" id="id288">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
@@ -3231,7 +3100,7 @@
                                                             <constructor>
                                                                 <object idref="id33"/>
                                                                 <double>0.0</double>
-                                                                <object idref="id255"/>
+                                                                <object idref="id243"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -3239,7 +3108,7 @@
                                                             <constructor>
                                                                 <object idref="id37"/>
                                                                 <double>179.5</double>
-                                                                <object idref="id255"/>
+                                                                <object idref="id243"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -3271,7 +3140,7 @@
                                         <string><![CDATA[MSLP (Eta model reduction) @ Mean sea level]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id308">
+                                        <object class="java.util.ArrayList" id="id296">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -3351,13 +3220,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id308"/>
+                                        <object idref="id296"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id285"/>
+                                                <object idref="id273"/>
                                             </method>
                                         </object>
                                     </property>
@@ -3429,7 +3298,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id300"/>
+                        <object idref="id288"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -3470,7 +3339,7 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id281"/>
+                                <object idref="id269"/>
                             </property>
                             <property name="LabelFont">
                                 <object class="java.awt.Font">
@@ -3546,7 +3415,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id333">
+                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id321">
                     <property name="ContourInfo">
                         <object class="ucar.unidata.util.ContourInfo">
                             <property name="Min">
@@ -3574,9 +3443,6 @@
                     </property>
                     <property name="DisplayId">
                         <string><![CDATA[planviewcontourfilled]]></string>
-                    </property>
-                    <property name="DisplayVisibility">
-                        <boolean>false</boolean>
                     </property>
                     <property name="Range">
                         <object class="ucar.unidata.util.Range">
@@ -3706,7 +3572,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id350">
+                        <object class="java.util.ArrayList" id="id338">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
@@ -3751,7 +3617,7 @@
                                                             <constructor>
                                                                 <object idref="id33"/>
                                                                 <double>0.0</double>
-                                                                <object amount="0.017453292519943295" class="visad.ScaledUnit" id="id354" name="deg">
+                                                                <object amount="0.017453292519943295" class="visad.ScaledUnit" id="id342" name="deg">
                                                                     <object idref="id31"/>
                                                                 </object>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -3761,7 +3627,7 @@
                                                             <constructor>
                                                                 <object idref="id37"/>
                                                                 <double>179.75</double>
-                                                                <object idref="id354"/>
+                                                                <object idref="id342"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -3797,7 +3663,7 @@
                                         <string><![CDATA[Temperature @ Ground or water surface]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id359">
+                                        <object class="java.util.ArrayList" id="id347">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -3926,13 +3792,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id359"/>
+                                        <object idref="id347"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id333"/>
+                                                <object idref="id321"/>
                                             </method>
                                         </object>
                                     </property>
@@ -4004,7 +3870,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id350"/>
+                        <object idref="id338"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -4140,7 +4006,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ColorPlanViewControl" id="id387">
+                <object class="ucar.unidata.idv.control.ColorPlanViewControl" id="id375">
                     <property name="ContourInfo">
                         <object class="ucar.unidata.util.ContourInfo">
                             <property name="Font">
@@ -4165,6 +4031,9 @@
                                 <float>30.0</float>
                             </property>
                         </object>
+                    </property>
+                    <property name="CollapseLegend">
+                        <boolean>true</boolean>
                     </property>
                     <property name="DisplayId">
                         <string><![CDATA[planviewcolor]]></string>
@@ -4324,7 +4193,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id408">
+                        <object class="java.util.ArrayList" id="id396">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
@@ -4369,7 +4238,7 @@
                                                             <constructor>
                                                                 <object idref="id33"/>
                                                                 <double>0.0</double>
-                                                                <object idref="id255"/>
+                                                                <object idref="id243"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -4377,7 +4246,7 @@
                                                             <constructor>
                                                                 <object idref="id37"/>
                                                                 <double>179.75</double>
-                                                                <object idref="id255"/>
+                                                                <object idref="id243"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -4409,7 +4278,7 @@
                                         <string><![CDATA[Upward Long-Wave Rad. Flux (Mixed_intervals Average) @ Nominal top of the atmosphere]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id416">
+                                        <object class="java.util.ArrayList" id="id404">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -4425,7 +4294,7 @@
                                                 </object>
                                             </method>
                                             <method name="add">
-                                                <object class="ucar.unidata.data.DataCategory" id="id419">
+                                                <object class="ucar.unidata.data.DataCategory" id="id407">
                                                     <property name="Name">
                                                         <string><![CDATA[GRID]]></string>
                                                     </property>
@@ -4479,13 +4348,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id416"/>
+                                        <object idref="id404"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id387"/>
+                                                <object idref="id375"/>
                                             </method>
                                         </object>
                                     </property>
@@ -4557,7 +4426,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id408"/>
+                        <object idref="id396"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -4601,7 +4470,7 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id281"/>
+                                <object idref="id269"/>
                             </property>
                             <property name="LabelFont">
                                 <object class="java.awt.Font">
@@ -4669,7 +4538,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ThreeDSurfaceControl" id="id439">
+                <object class="ucar.unidata.idv.control.ThreeDSurfaceControl" id="id427">
                     <property name="SurfaceValue">
                         <double>0.014999999664723873</double>
                     </property>
@@ -4700,9 +4569,6 @@
                     </property>
                     <property name="DisplayId">
                         <string><![CDATA[isosurfacebyanother]]></string>
-                    </property>
-                    <property name="DisplayVisibility">
-                        <boolean>false</boolean>
                     </property>
                     <property name="Range">
                         <object class="ucar.unidata.util.Range">
@@ -4822,7 +4688,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id456">
+                        <object class="java.util.ArrayList" id="id444">
                             <method name="add">
                                 <object class="ucar.unidata.data.DerivedDataChoice">
                                     <property name="Code">
@@ -4835,7 +4701,7 @@
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[Other_Parameter]]></string>
-                                                <object class="ucar.unidata.data.DirectDataChoice" id="id459">
+                                                <object class="ucar.unidata.data.DirectDataChoice" id="id447">
                                                     <property name="DataSource">
                                                         <object idref="id23"/>
                                                     </property>
@@ -4876,7 +4742,7 @@
                                                                     <constructor>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object class="visad.RealType" id="id463">
+                                                                                <object class="visad.RealType" id="id451">
                                                                                     <object class="java.util.ArrayList">
                                                                                         <method name="add">
                                                                                             <string><![CDATA[Latitude]]></string>
@@ -4899,7 +4765,7 @@
                                                                         </object>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object class="visad.RealType" id="id466">
+                                                                                <object class="visad.RealType" id="id454">
                                                                                     <object class="java.util.ArrayList">
                                                                                         <method name="add">
                                                                                             <string><![CDATA[Longitude]]></string>
@@ -4922,7 +4788,7 @@
                                                                         </object>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object class="visad.RealType" id="id469">
+                                                                                <object class="visad.RealType" id="id457">
                                                                                     <object class="java.util.ArrayList">
                                                                                         <method name="add">
                                                                                             <string><![CDATA[Altitude]]></string>
@@ -4967,7 +4833,7 @@
                                                         <string><![CDATA[Geopotential height @ Isobaric surface]]></string>
                                                     </property>
                                                     <property name="Categories">
-                                                        <object class="java.util.ArrayList" id="id472">
+                                                        <object class="java.util.ArrayList" id="id460">
                                                             <method name="add">
                                                                 <object class="ucar.unidata.data.DataCategory">
                                                                     <property name="Name">
@@ -4983,7 +4849,7 @@
                                                                 </object>
                                                             </method>
                                                             <method name="add">
-                                                                <object class="ucar.unidata.data.DataCategory" id="id475">
+                                                                <object class="ucar.unidata.data.DataCategory" id="id463">
                                                                     <property name="Name">
                                                                         <string><![CDATA[GRID]]></string>
                                                                     </property>
@@ -5093,7 +4959,7 @@
                                                         </object>
                                                     </property>
                                                     <property name="DataCategories">
-                                                        <object idref="id472"/>
+                                                        <object idref="id460"/>
                                                     </property>
                                                 </object>
                                             </method>
@@ -5110,7 +4976,7 @@
                                                         <object class="java.util.Hashtable">
                                                             <method name="put">
                                                                 <string><![CDATA[D2]]></string>
-                                                                <object class="ucar.unidata.data.DirectDataChoice" id="id489">
+                                                                <object class="ucar.unidata.data.DirectDataChoice" id="id477">
                                                                     <property name="DataSource">
                                                                         <object idref="id23"/>
                                                                     </property>
@@ -5151,7 +5017,7 @@
                                                                                     <constructor>
                                                                                         <object class="visad.Real">
                                                                                             <constructor>
-                                                                                                <object idref="id463"/>
+                                                                                                <object idref="id451"/>
                                                                                                 <double>0.0</double>
                                                                                                 <object idref="id32"/>
                                                                                                 <null class="visad.ErrorEstimate"/>
@@ -5159,7 +5025,7 @@
                                                                                         </object>
                                                                                         <object class="visad.Real">
                                                                                             <constructor>
-                                                                                                <object idref="id466"/>
+                                                                                                <object idref="id454"/>
                                                                                                 <double>179.5</double>
                                                                                                 <object idref="id32"/>
                                                                                                 <null class="visad.ErrorEstimate"/>
@@ -5167,7 +5033,7 @@
                                                                                         </object>
                                                                                         <object class="visad.Real">
                                                                                             <constructor>
-                                                                                                <object idref="id469"/>
+                                                                                                <object idref="id457"/>
                                                                                                 <double>0.0</double>
                                                                                                 <object idref="id40"/>
                                                                                                 <null class="visad.ErrorEstimate"/>
@@ -5189,7 +5055,7 @@
                                                                         <string><![CDATA[v-component of wind @ Isobaric surface]]></string>
                                                                     </property>
                                                                     <property name="Categories">
-                                                                        <object class="java.util.ArrayList" id="id496">
+                                                                        <object class="java.util.ArrayList" id="id484">
                                                                             <method name="add">
                                                                                 <object class="ucar.unidata.data.DataCategory">
                                                                                     <property name="Name">
@@ -5205,7 +5071,7 @@
                                                                                 </object>
                                                                             </method>
                                                                             <method name="add">
-                                                                                <object idref="id475"/>
+                                                                                <object idref="id463"/>
                                                                             </method>
                                                                             <method name="add">
                                                                                 <object class="ucar.unidata.data.DataCategory">
@@ -5230,13 +5096,13 @@
                                                                         </object>
                                                                     </property>
                                                                     <property name="DataCategories">
-                                                                        <object idref="id496"/>
+                                                                        <object idref="id484"/>
                                                                     </property>
                                                                 </object>
                                                             </method>
                                                             <method name="put">
                                                                 <string><![CDATA[D1]]></string>
-                                                                <object class="ucar.unidata.data.DirectDataChoice" id="id501">
+                                                                <object class="ucar.unidata.data.DirectDataChoice" id="id489">
                                                                     <property name="DataSource">
                                                                         <object idref="id23"/>
                                                                     </property>
@@ -5277,7 +5143,7 @@
                                                                                     <constructor>
                                                                                         <object class="visad.Real">
                                                                                             <constructor>
-                                                                                                <object idref="id463"/>
+                                                                                                <object idref="id451"/>
                                                                                                 <double>0.0</double>
                                                                                                 <object idref="id32"/>
                                                                                                 <null class="visad.ErrorEstimate"/>
@@ -5285,7 +5151,7 @@
                                                                                         </object>
                                                                                         <object class="visad.Real">
                                                                                             <constructor>
-                                                                                                <object idref="id466"/>
+                                                                                                <object idref="id454"/>
                                                                                                 <double>179.5</double>
                                                                                                 <object idref="id32"/>
                                                                                                 <null class="visad.ErrorEstimate"/>
@@ -5293,7 +5159,7 @@
                                                                                         </object>
                                                                                         <object class="visad.Real">
                                                                                             <constructor>
-                                                                                                <object idref="id469"/>
+                                                                                                <object idref="id457"/>
                                                                                                 <double>0.0</double>
                                                                                                 <object idref="id40"/>
                                                                                                 <null class="visad.ErrorEstimate"/>
@@ -5315,7 +5181,7 @@
                                                                         <string><![CDATA[u-component of wind @ Isobaric surface]]></string>
                                                                     </property>
                                                                     <property name="Categories">
-                                                                        <object class="java.util.ArrayList" id="id508">
+                                                                        <object class="java.util.ArrayList" id="id496">
                                                                             <method name="add">
                                                                                 <object class="ucar.unidata.data.DataCategory">
                                                                                     <property name="Name">
@@ -5331,7 +5197,7 @@
                                                                                 </object>
                                                                             </method>
                                                                             <method name="add">
-                                                                                <object idref="id475"/>
+                                                                                <object idref="id463"/>
                                                                             </method>
                                                                             <method name="add">
                                                                                 <object class="ucar.unidata.data.DataCategory">
@@ -5356,7 +5222,7 @@
                                                                         </object>
                                                                     </property>
                                                                     <property name="DataCategories">
-                                                                        <object idref="id508"/>
+                                                                        <object idref="id496"/>
                                                                     </property>
                                                                 </object>
                                                             </method>
@@ -5368,10 +5234,10 @@
                                                     <property name="Choices">
                                                         <object class="java.util.ArrayList">
                                                             <method name="add">
-                                                                <object idref="id501"/>
+                                                                <object idref="id489"/>
                                                             </method>
                                                             <method name="add">
-                                                                <object idref="id489"/>
+                                                                <object idref="id477"/>
                                                             </method>
                                                         </object>
                                                     </property>
@@ -5397,9 +5263,9 @@
                                                         <string><![CDATA[Relative Vorticity (from u-component_of_wind_isobaric & v-component_of_wind_isobaric)]]></string>
                                                     </property>
                                                     <property name="Categories">
-                                                        <object class="java.util.ArrayList" id="id515">
+                                                        <object class="java.util.ArrayList" id="id503">
                                                             <method name="add">
-                                                                <object class="ucar.unidata.data.DataCategory" id="id516">
+                                                                <object class="ucar.unidata.data.DataCategory" id="id504">
                                                                     <property name="Name">
                                                                         <string><![CDATA[3D grid]]></string>
                                                                     </property>
@@ -5504,12 +5370,12 @@
                                                         </object>
                                                     </property>
                                                     <property name="DataCategories">
-                                                        <object idref="id515"/>
+                                                        <object idref="id503"/>
                                                     </property>
                                                 </object>
                                             </method>
                                             <method name="add">
-                                                <object idref="id459"/>
+                                                <object idref="id447"/>
                                             </method>
                                         </object>
                                     </property>
@@ -5526,20 +5392,20 @@
                                         <string><![CDATA[Relative Vorticity (from u-component_of_wind_isobaric & v-component_of_wind_isobaric)]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id530">
+                                        <object class="java.util.ArrayList" id="id518">
                                             <method name="add">
-                                                <object idref="id516"/>
+                                                <object idref="id504"/>
                                             </method>
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id530"/>
+                                        <object idref="id518"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id439"/>
+                                                <object idref="id427"/>
                                             </method>
                                         </object>
                                     </property>
@@ -5615,9 +5481,9 @@
                             <property name="FromLevel">
                                 <object class="visad.Real">
                                     <constructor>
-                                        <object idref="id237"/>
+                                        <object idref="id225"/>
                                         <double>50000.0</double>
-                                        <object class="visad.DerivedUnit" id="id538" name="Pa">
+                                        <object class="visad.DerivedUnit" id="id526" name="Pa">
                                             <string><![CDATA[kg.s-2.m-1]]></string>
                                         </object>
                                         <null class="visad.ErrorEstimate"/>
@@ -5627,9 +5493,9 @@
                             <property name="ToLevel">
                                 <object class="visad.Real">
                                     <constructor>
-                                        <object idref="id237"/>
+                                        <object idref="id225"/>
                                         <double>100000.0</double>
-                                        <object idref="id538"/>
+                                        <object idref="id526"/>
                                         <null class="visad.ErrorEstimate"/>
                                     </constructor>
                                 </object>
@@ -5637,7 +5503,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id456"/>
+                        <object idref="id444"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -5672,16 +5538,16 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id230"/>
+                                <object idref="id218"/>
                             </property>
                             <property name="LabelFont">
-                                <object idref="id163"/>
+                                <object idref="id151"/>
                             </property>
                             <property name="Name">
                                 <string><![CDATA[relvort]]></string>
                             </property>
                             <property name="Unit">
-                                <object amount="1.0E-6" class="visad.ScaledUnit" id="id545" name="1E-6 s-1">
+                                <object amount="1.0E-6" class="visad.ScaledUnit" id="id533" name="1E-6 s-1">
                                     <object class="visad.DerivedUnit" name="s-1">
                                         <string><![CDATA[s-1]]></string>
                                     </object>
@@ -5739,7 +5605,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.TopographyControl" id="id546">
+                <object class="ucar.unidata.idv.control.TopographyControl" id="id534">
                     <property name="Smoothed">
                         <boolean>true</boolean>
                     </property>
@@ -5770,6 +5636,9 @@
                     </property>
                     <property name="DisplayId">
                         <string><![CDATA[topography]]></string>
+                    </property>
+                    <property name="DisplayVisibility">
+                        <boolean>false</boolean>
                     </property>
                     <property name="Range">
                         <object class="ucar.unidata.util.Range">
@@ -5869,11 +5738,11 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id558">
+                        <object class="java.util.ArrayList" id="id546">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
-                                        <object idref="id147"/>
+                                        <object idref="id135"/>
                                     </property>
                                     <property name="Name">
                                         <string><![CDATA[topo]]></string>
@@ -5908,7 +5777,7 @@
                                                     <constructor>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id463"/>
+                                                                <object idref="id451"/>
                                                                 <double>0.0</double>
                                                                 <object idref="id32"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -5916,7 +5785,7 @@
                                                         </object>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id466"/>
+                                                                <object idref="id454"/>
                                                                 <double>0.0</double>
                                                                 <object idref="id32"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -5924,7 +5793,7 @@
                                                         </object>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id469"/>
+                                                                <object idref="id457"/>
                                                                 <double>0.0</double>
                                                                 <object idref="id40"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -5950,7 +5819,7 @@
                                         <string><![CDATA[Topography]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id566">
+                                        <object class="java.util.ArrayList" id="id554">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -5998,13 +5867,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id566"/>
+                                        <object idref="id554"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id546"/>
+                                                <object idref="id534"/>
                                             </method>
                                         </object>
                                     </property>
@@ -6083,7 +5952,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id558"/>
+                        <object idref="id546"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -6118,10 +5987,10 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id230"/>
+                                <object idref="id218"/>
                             </property>
                             <property name="LabelFont">
-                                <object idref="id163"/>
+                                <object idref="id151"/>
                             </property>
                             <property name="Name">
                                 <string><![CDATA[topo]]></string>
@@ -6175,7 +6044,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id582">
+                <object class="ucar.unidata.idv.control.ContourPlanViewControl" id="id570">
                     <property name="ContourInfo">
                         <object class="ucar.unidata.util.ContourInfo">
                             <property name="Min">
@@ -6349,7 +6218,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id601">
+                        <object class="java.util.ArrayList" id="id589">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
@@ -6394,7 +6263,7 @@
                                                             <constructor>
                                                                 <object idref="id33"/>
                                                                 <double>0.0</double>
-                                                                <object idref="id255"/>
+                                                                <object idref="id243"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -6402,7 +6271,7 @@
                                                             <constructor>
                                                                 <object idref="id37"/>
                                                                 <double>179.75</double>
-                                                                <object idref="id255"/>
+                                                                <object idref="id243"/>
                                                                 <null class="visad.ErrorEstimate"/>
                                                             </constructor>
                                                         </object>
@@ -6434,7 +6303,7 @@
                                         <string><![CDATA[Precipitable water @ Entire atmosphere layer]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id609">
+                                        <object class="java.util.ArrayList" id="id597">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -6450,7 +6319,7 @@
                                                 </object>
                                             </method>
                                             <method name="add">
-                                                <object idref="id419"/>
+                                                <object idref="id407"/>
                                             </method>
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
@@ -6483,13 +6352,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id609"/>
+                                        <object idref="id597"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id582"/>
+                                                <object idref="id570"/>
                                             </method>
                                         </object>
                                     </property>
@@ -6561,7 +6430,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id601"/>
+                        <object idref="id589"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -6602,7 +6471,7 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id281"/>
+                                <object idref="id269"/>
                             </property>
                             <property name="LabelFont">
                                 <object class="java.awt.Font">
@@ -6673,7 +6542,7 @@
                 <object idref="id55"/>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ThreeDSurfaceControl" id="id629">
+                <object class="ucar.unidata.idv.control.ThreeDSurfaceControl" id="id617">
                     <property name="SurfaceValue">
                         <double>0.029999999329447746</double>
                     </property>
@@ -6814,7 +6683,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id643">
+                        <object class="java.util.ArrayList" id="id631">
                             <method name="add">
                                 <object class="ucar.unidata.data.DerivedDataChoice">
                                     <property name="DataContext">
@@ -6824,7 +6693,7 @@
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[D2]]></string>
-                                                <object class="ucar.unidata.data.DirectDataChoice" id="id646">
+                                                <object class="ucar.unidata.data.DirectDataChoice" id="id634">
                                                     <property name="DataSource">
                                                         <object idref="id23"/>
                                                     </property>
@@ -6865,7 +6734,7 @@
                                                                     <constructor>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object idref="id463"/>
+                                                                                <object idref="id451"/>
                                                                                 <double>0.0</double>
                                                                                 <object idref="id32"/>
                                                                                 <null class="visad.ErrorEstimate"/>
@@ -6873,7 +6742,7 @@
                                                                         </object>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object idref="id466"/>
+                                                                                <object idref="id454"/>
                                                                                 <double>179.5</double>
                                                                                 <object idref="id32"/>
                                                                                 <null class="visad.ErrorEstimate"/>
@@ -6881,7 +6750,7 @@
                                                                         </object>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object idref="id469"/>
+                                                                                <object idref="id457"/>
                                                                                 <double>0.0</double>
                                                                                 <object idref="id40"/>
                                                                                 <null class="visad.ErrorEstimate"/>
@@ -6903,7 +6772,7 @@
                                                         <string><![CDATA[v-component of wind @ Isobaric surface]]></string>
                                                     </property>
                                                     <property name="Categories">
-                                                        <object class="java.util.ArrayList" id="id653">
+                                                        <object class="java.util.ArrayList" id="id641">
                                                             <method name="add">
                                                                 <object class="ucar.unidata.data.DataCategory">
                                                                     <property name="Name">
@@ -6919,7 +6788,7 @@
                                                                 </object>
                                                             </method>
                                                             <method name="add">
-                                                                <object idref="id475"/>
+                                                                <object idref="id463"/>
                                                             </method>
                                                             <method name="add">
                                                                 <object class="ucar.unidata.data.DataCategory">
@@ -6944,13 +6813,13 @@
                                                         </object>
                                                     </property>
                                                     <property name="DataCategories">
-                                                        <object idref="id653"/>
+                                                        <object idref="id641"/>
                                                     </property>
                                                 </object>
                                             </method>
                                             <method name="put">
                                                 <string><![CDATA[D1]]></string>
-                                                <object class="ucar.unidata.data.DirectDataChoice" id="id658">
+                                                <object class="ucar.unidata.data.DirectDataChoice" id="id646">
                                                     <property name="DataSource">
                                                         <object idref="id23"/>
                                                     </property>
@@ -6991,7 +6860,7 @@
                                                                     <constructor>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object idref="id463"/>
+                                                                                <object idref="id451"/>
                                                                                 <double>0.0</double>
                                                                                 <object idref="id32"/>
                                                                                 <null class="visad.ErrorEstimate"/>
@@ -6999,7 +6868,7 @@
                                                                         </object>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object idref="id466"/>
+                                                                                <object idref="id454"/>
                                                                                 <double>179.5</double>
                                                                                 <object idref="id32"/>
                                                                                 <null class="visad.ErrorEstimate"/>
@@ -7007,7 +6876,7 @@
                                                                         </object>
                                                                         <object class="visad.Real">
                                                                             <constructor>
-                                                                                <object idref="id469"/>
+                                                                                <object idref="id457"/>
                                                                                 <double>0.0</double>
                                                                                 <object idref="id40"/>
                                                                                 <null class="visad.ErrorEstimate"/>
@@ -7029,7 +6898,7 @@
                                                         <string><![CDATA[u-component of wind @ Isobaric surface]]></string>
                                                     </property>
                                                     <property name="Categories">
-                                                        <object class="java.util.ArrayList" id="id665">
+                                                        <object class="java.util.ArrayList" id="id653">
                                                             <method name="add">
                                                                 <object class="ucar.unidata.data.DataCategory">
                                                                     <property name="Name">
@@ -7045,7 +6914,7 @@
                                                                 </object>
                                                             </method>
                                                             <method name="add">
-                                                                <object idref="id475"/>
+                                                                <object idref="id463"/>
                                                             </method>
                                                             <method name="add">
                                                                 <object class="ucar.unidata.data.DataCategory">
@@ -7070,7 +6939,7 @@
                                                         </object>
                                                     </property>
                                                     <property name="DataCategories">
-                                                        <object idref="id665"/>
+                                                        <object idref="id653"/>
                                                     </property>
                                                 </object>
                                             </method>
@@ -7082,10 +6951,10 @@
                                     <property name="Choices">
                                         <object class="java.util.ArrayList">
                                             <method name="add">
-                                                <object idref="id658"/>
+                                                <object idref="id646"/>
                                             </method>
                                             <method name="add">
-                                                <object idref="id646"/>
+                                                <object idref="id634"/>
                                             </method>
                                         </object>
                                     </property>
@@ -7111,7 +6980,7 @@
                                         <string><![CDATA[Relative Vorticity (from u-component_of_wind_isobaric & v-component_of_wind_isobaric)]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id672">
+                                        <object class="java.util.ArrayList" id="id660">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -7218,13 +7087,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id672"/>
+                                        <object idref="id660"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id629"/>
+                                                <object idref="id617"/>
                                             </method>
                                         </object>
                                     </property>
@@ -7233,7 +7102,7 @@
                         </object>
                     </property>
                     <property name="DisplayCategory">
-                        <string><![CDATA[3D Surface]]></string>
+                        <string><![CDATA[Maps]]></string>
                     </property>
                     <property name="DataSelection">
                         <object class="ucar.unidata.data.DataSelection">
@@ -7300,9 +7169,9 @@
                             <property name="FromLevel">
                                 <object class="visad.Real">
                                     <constructor>
-                                        <object idref="id237"/>
+                                        <object idref="id225"/>
                                         <double>20000.0</double>
-                                        <object class="visad.DerivedUnit" id="id693" name="Pa">
+                                        <object class="visad.DerivedUnit" id="id681" name="Pa">
                                             <string><![CDATA[kg.s-2.m-1]]></string>
                                         </object>
                                         <null class="visad.ErrorEstimate"/>
@@ -7312,9 +7181,9 @@
                             <property name="ToLevel">
                                 <object class="visad.Real">
                                     <constructor>
-                                        <object idref="id237"/>
+                                        <object idref="id225"/>
                                         <double>100000.0</double>
-                                        <object idref="id693"/>
+                                        <object idref="id681"/>
                                         <null class="visad.ErrorEstimate"/>
                                     </constructor>
                                 </object>
@@ -7322,7 +7191,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id643"/>
+                        <object idref="id631"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -7357,16 +7226,16 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id230"/>
+                                <object idref="id218"/>
                             </property>
                             <property name="LabelFont">
-                                <object idref="id163"/>
+                                <object idref="id151"/>
                             </property>
                             <property name="Name">
                                 <string><![CDATA[relvort]]></string>
                             </property>
                             <property name="Unit">
-                                <object idref="id545"/>
+                                <object idref="id533"/>
                             </property>
                             <property name="ColorPalette">
                                 <array class="[F" length="4">
@@ -7420,7 +7289,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ColorPlanViewControl" id="id699">
+                <object class="ucar.unidata.idv.control.ColorPlanViewControl" id="id687">
                     <property name="ContourInfo">
                         <object class="ucar.unidata.util.ContourInfo">
                             <property name="Font">
@@ -7448,6 +7317,9 @@
                     </property>
                     <property name="DisplayId">
                         <string><![CDATA[planviewcolor]]></string>
+                    </property>
+                    <property name="DisplayVisibility">
+                        <boolean>false</boolean>
                     </property>
                     <property name="Range">
                         <object class="ucar.unidata.util.Range">
@@ -7562,7 +7434,7 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id714">
+                        <object class="java.util.ArrayList" id="id702">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
@@ -7605,7 +7477,7 @@
                                                     <constructor>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id463"/>
+                                                                <object idref="id451"/>
                                                                 <double>0.0</double>
                                                                 <object idref="id32"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -7613,7 +7485,7 @@
                                                         </object>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id466"/>
+                                                                <object idref="id454"/>
                                                                 <double>179.5</double>
                                                                 <object idref="id32"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -7621,7 +7493,7 @@
                                                         </object>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id469"/>
+                                                                <object idref="id457"/>
                                                                 <double>0.0</double>
                                                                 <object idref="id40"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -7651,7 +7523,7 @@
                                         <string><![CDATA[v-component of wind @ Planetary Boundary Layer]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id722">
+                                        <object class="java.util.ArrayList" id="id710">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -7703,13 +7575,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id722"/>
+                                        <object idref="id710"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id699"/>
+                                                <object idref="id687"/>
                                             </method>
                                         </object>
                                     </property>
@@ -7785,7 +7657,7 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id714"/>
+                        <object idref="id702"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
@@ -7820,7 +7692,7 @@
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id230"/>
+                                <object idref="id218"/>
                             </property>
                             <property name="LabelFont">
                                 <object class="java.awt.Font">
@@ -7894,7 +7766,7 @@
                 </object>
             </method>
             <method name="add">
-                <object class="ucar.unidata.idv.control.ColorCrossSectionControl" id="id741">
+                <object class="ucar.unidata.idv.control.ColorCrossSectionControl" id="id729">
                     <property name="StartPoint">
                         <object class="visad.RealTuple">
                             <constructor>
@@ -7984,7 +7856,7 @@
                         </object>
                     </property>
                     <property name="AnimationInfo">
-                        <object class="ucar.visad.display.AnimationInfo" id="id752">
+                        <object class="ucar.visad.display.AnimationInfo" id="id740">
                             <property name="AnimationSetInfo">
                                 <object class="ucar.visad.display.AnimationSetInfo">
                                     <property name="StartFixedTime">
@@ -8019,7 +7891,7 @@
                                 <null class="java.awt.Color"/>
                             </property>
                             <property name="AnimationInfo">
-                                <object idref="id752"/>
+                                <object idref="id740"/>
                             </property>
                             <property name="DisplayListFont">
                                 <object class="java.awt.Font">
@@ -8031,7 +7903,7 @@
                                 </object>
                             </property>
                             <property name="ViewDescriptor">
-                                <object class="ucar.unidata.idv.ViewDescriptor" id="id757">
+                                <object class="ucar.unidata.idv.ViewDescriptor" id="id745">
                                     <property name="Name">
                                         <string><![CDATA[CrossSectionView]]></string>
                                     </property>
@@ -8040,7 +7912,7 @@
                             <property name="Aliases">
                                 <object class="java.util.ArrayList">
                                     <method name="add">
-                                        <object idref="id757"/>
+                                        <object idref="id745"/>
                                     </method>
                                 </object>
                             </property>
@@ -8083,9 +7955,6 @@
                                         <java.lang.Boolean>true</java.lang.Boolean>
                                     </method>
                                 </object>
-                            </property>
-                            <property name="HasWindow">
-                                <boolean>true</boolean>
                             </property>
                             <property name="ShowControlLegend">
                                 <boolean>false</boolean>
@@ -8353,6 +8222,9 @@
                     <property name="DisplayId">
                         <string><![CDATA[colorxs]]></string>
                     </property>
+                    <property name="DisplayVisibility">
+                        <boolean>false</boolean>
+                    </property>
                     <property name="ShowInTabs">
                         <boolean>false</boolean>
                     </property>
@@ -8370,7 +8242,7 @@
                         <string><![CDATA[Color-Shaded Cross Section]]></string>
                     </property>
                     <property name="Color">
-                        <object class="java.awt.Color" id="id789">
+                        <object class="java.awt.Color" id="id777">
                             <constructor>
                                 <int>0</int>
                                 <int>255</int>
@@ -8459,11 +8331,11 @@
                         </object>
                     </property>
                     <property name="DataChoices">
-                        <object class="java.util.ArrayList" id="id800">
+                        <object class="java.util.ArrayList" id="id788">
                             <method name="add">
                                 <object class="ucar.unidata.data.DirectDataChoice">
                                     <property name="DataSource">
-                                        <object idref="id138"/>
+                                        <object idref="id126"/>
                                     </property>
                                     <property name="Name">
                                         <string><![CDATA[v-component_of_wind_isobaric]]></string>
@@ -8502,7 +8374,7 @@
                                                     <constructor>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id463"/>
+                                                                <object idref="id451"/>
                                                                 <double>0.0</double>
                                                                 <object idref="id32"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -8510,7 +8382,7 @@
                                                         </object>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id466"/>
+                                                                <object idref="id454"/>
                                                                 <double>179.875</double>
                                                                 <object idref="id32"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -8518,7 +8390,7 @@
                                                         </object>
                                                         <object class="visad.Real">
                                                             <constructor>
-                                                                <object idref="id469"/>
+                                                                <object idref="id457"/>
                                                                 <double>0.0</double>
                                                                 <object idref="id40"/>
                                                                 <null class="visad.ErrorEstimate"/>
@@ -8548,7 +8420,7 @@
                                         <string><![CDATA[v-component of wind @ Isobaric surface]]></string>
                                     </property>
                                     <property name="Categories">
-                                        <object class="java.util.ArrayList" id="id808">
+                                        <object class="java.util.ArrayList" id="id796">
                                             <method name="add">
                                                 <object class="ucar.unidata.data.DataCategory">
                                                     <property name="Name">
@@ -8610,13 +8482,13 @@
                                         </object>
                                     </property>
                                     <property name="DataCategories">
-                                        <object idref="id808"/>
+                                        <object idref="id796"/>
                                     </property>
                                     <property name="FixedRequestProperties">
                                         <object class="java.util.Hashtable">
                                             <method name="put">
                                                 <string><![CDATA[prop.requester]]></string>
-                                                <object idref="id741"/>
+                                                <object idref="id729"/>
                                             </method>
                                         </object>
                                     </property>
@@ -8678,9 +8550,9 @@
                             <property name="FromLevel">
                                 <object class="visad.Real">
                                     <constructor>
-                                        <object idref="id237"/>
+                                        <object idref="id225"/>
                                         <double>40000.0</double>
-                                        <object class="visad.DerivedUnit" id="id822" name="Pa">
+                                        <object class="visad.DerivedUnit" id="id810" name="Pa">
                                             <string><![CDATA[kg.s-2.m-1]]></string>
                                         </object>
                                         <null class="visad.ErrorEstimate"/>
@@ -8690,9 +8562,9 @@
                             <property name="ToLevel">
                                 <object class="visad.Real">
                                     <constructor>
-                                        <object idref="id237"/>
+                                        <object idref="id225"/>
                                         <double>100000.0</double>
-                                        <object idref="id822"/>
+                                        <object idref="id810"/>
                                         <null class="visad.ErrorEstimate"/>
                                     </constructor>
                                 </object>
@@ -8700,18 +8572,10 @@
                         </object>
                     </property>
                     <property name="InitDataChoices">
-                        <object idref="id800"/>
+                        <object idref="id788"/>
                     </property>
                     <property name="Viewer">
                         <object idref="idv"/>
-                    </property>
-                    <property name="WindowSize">
-                        <object class="java.awt.Dimension">
-                            <constructor>
-                                <int>569</int>
-                                <int>425</int>
-                            </constructor>
-                        </object>
                     </property>
                     <property name="MainPanelSize">
                         <object class="java.awt.Dimension">
@@ -8720,15 +8584,6 @@
                                 <int>375</int>
                             </constructor>
                         </object>
-                    </property>
-                    <property name="WindowX">
-                        <int>871</int>
-                    </property>
-                    <property name="WindowY">
-                        <int>425</int>
-                    </property>
-                    <property name="WindowVisible">
-                        <boolean>true</boolean>
                     </property>
                     <property name="DefaultView">
                         <string><![CDATA[view_1667345132700_0_22538893175303143_10]]></string>
@@ -8747,15 +8602,15 @@
                         </object>
                     </property>
                     <property name="DisplayListColor">
-                        <object idref="id789"/>
+                        <object idref="id777"/>
                     </property>
                     <property name="ColorScaleInfo">
                         <object class="ucar.visad.display.ColorScaleInfo">
                             <property name="LabelColor">
-                                <object idref="id230"/>
+                                <object idref="id218"/>
                             </property>
                             <property name="LabelFont">
-                                <object idref="id163"/>
+                                <object idref="id151"/>
                             </property>
                             <property name="Name">
                                 <string><![CDATA[v-component_of_wind_isobaric]]></string>
