@@ -1,7 +1,9 @@
 # Calendar (reported) 
 
-## Perpetual assignment for midterm: collect key grammar terms in [this google doc]()
+## Ongoing assignment (unitl midterm): collect your 10 key grammar terms in [this google doc](https://docs.google.com/document/d/167c9hzHmwGoN1B_j-ZskOJ8Ffwu-GBIl4-UckAuDVK4/edit?usp=sharing)
 At least 10 per student. Before the midterm, you will use chatGPT and wikipedia and whatever else to produce a table of definitions (in math and words). This grand table of terms will become the exam, as I erase cells and ask you to fill them in during class exam hour. 
+
+---------
 
 Dates	|Monday	|Wednesday
 -------|------------- | ------------- 
