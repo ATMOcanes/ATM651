@@ -1,7 +1,7 @@
 # Calendar (reported) 
 
 ## Ongoing assignment (unitl midterm): collect your 10 key grammar terms in [this google doc](https://docs.google.com/document/d/167c9hzHmwGoN1B_j-ZskOJ8Ffwu-GBIl4-UckAuDVK4/edit?usp=sharing)
-10 per student by midterm time. Before the test, you will use chatGPT and wikipedia and whatever else to produce a table of vocabulary with definitions in math and words and concepts (sketches) sometimes. The grand table of terms will become the exam, as I erase cells and ask you to fill them in during class exam hour like [this](https://github.com/ATMOcanes/ATM651/blob/master/Midterm_Exam_Key.pdf). 
+10 per student by midterm time. Before the test, you will use chatGPT and wikipedia and whatever else to produce a table of vocabulary with definitions in math and words and concepts (sketches) sometimes. The grand table of terms will become the exam, as I erase cells and ask you to fill them in during class exam hour, like [this](https://github.com/ATMOcanes/ATM651/blob/master/Midterm_Exam_Key.pdf). 
 
 ---------
 
