@@ -130,7 +130,7 @@ maxx=0
 miny=0
 maxy=0
 for tt in range(0,len(wsol),1):
-  for k in range(0,np.int(len(wsol[0])/2)):
+  for k in range(0,np.int32(len(wsol[0])/2)):
     if wsol[tt][2*k]<minx:
       minx=wsol[tt][2*k]
     if wsol[tt][2*k]>maxx:
@@ -163,7 +163,7 @@ def animate(tt):
   ax.set_xlabel('x')
   ax.set_ylabel('y')
     # Plot the point vortex motion for each time step
-  for k in range(0,np.int(len(wsol[0])/2)):
+  for k in range(0,np.int32(len(wsol[0])/2)):
     if G[k]>0.:
       farbe='r' # plot cyclonic vortices red
     if G[k]<0.:
