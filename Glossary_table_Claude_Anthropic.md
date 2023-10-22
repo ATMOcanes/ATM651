@@ -1,3 +1,5 @@
+# Beware: raw output from https://claude.ai/chat/
+
 Here is the 4 column glossary table for the atmospheric dynamics and meteorology terms:
 
 Word | Verbal Definition | Mathematical Definition/Formula | Units
