@@ -7,7 +7,7 @@ Word | Verbal Definition | Mathematical Definition/Formula | Units
 function | A mathematical relationship where each input has a single output | f(x) | N/A
 coordinate | A number that defines a position along an axis | x, y, z | m, km
 argument | Independent variable of a function | x in f(x) | N/A  
-slope | Rate of change of a variable | dy/dx | m/m, km/km 
+slope | Rate of change of a variable | dy/dx *dz/dx* | m/m, km/km *m/(100km)* 
 curvature | Rate of change of slope | d^2y/dx^2 | 1/m
 del, nabla | Vector differential operator | ∇ | 1/m
 curl | Rotation of a vector field | (∇ x F) | 1/s  
