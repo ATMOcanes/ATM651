@@ -17,7 +17,7 @@ divergence | Outward flux of a vector field | ∇ · F | 1/s
 gradient | Rate of change of a scalar field | ∇φ | m/m, km/km
 Laplacian | Divergence of gradient, measures concavity | ∇^2φ | 1/m^2
 kinematics | Description of motion | N/A | N/A
-advection | Transport by fluid motion | -u ∂φ/∂x | units of φ/s
+meridional advection of zonal momentum | Transport by fluid motion | -u ∂φ/∂x | units of φ/s
 diffusion | Spreading of quantity by random motion | ∂φ/∂t = K ∇^2φ | units of φ/s
 meridional | North-south direction | N/A | N/A
 zonal | West-east direction | N/A | N/A
