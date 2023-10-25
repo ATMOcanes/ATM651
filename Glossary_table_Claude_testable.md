@@ -2,7 +2,7 @@
 # Problematic ones are [here](https://github.com/ATMOcanes/ATM651/blob/master/Glossary_table_Problematic_Ones.md)
 ### Biggest remaining problem: vectors treated as one dimension (like advection line 11)
 ### You should know how to do better (vector form) 
-### Textbook, or compare to GPT-4 [here](https://docs.google.com/document/d/1ffX5VAzhdYgoUo_GcoPSI_Ulf-uJzziXfkGAAREHuJE/edit) -- which has sign wrong for advection! Trust only your own derivation-checks! and (final version of) perfectionists' textbook. 
+### Compare to GPT-4 [here](https://docs.google.com/document/d/1ffX5VAzhdYgoUo_GcoPSI_Ulf-uJzziXfkGAAREHuJE/edit) -- but that has sign wrong for advection! Trust only your own derivation-checks! and (final version of) perfectionists' textbooks perhaps... 
 
 Word | Verbal Definition | Mathematical Definition/Formula | Units
 |-|-|-|-|  
