@@ -1,1 +1,7 @@
 ## Reported calendar with links of in-class activities for 2024 class
+
+Dates	|Monday	|Wednesday
+-------|------------- | ------------- 
+Aug 19-21 |Unpack course title, hand out [questionnaire]([https://github.com/ATMOcanes/ATM651/blob/master/Week1-2_basics/ATM_GradDyn_Intake_Questionnaire.docx](https://github.com/ATMOcanes/ATM651/blob/master/Week1-2_basics/Intake_questionnaire_fall2024.docx)). | Summer cloud photos, [WH Ch1](https://github.com/ATMOcanes/ATM651/blob/master/Week1-2_basics/WallaceHobbs-Ch01.pdf) qualitative questions. Here is a great [Penn State math & concepts refresher](https://www.e-education.psu.edu/meteo300/node/694). We will use [WH book ch7](https://weather.rsmas.miami.edu/bmapes/http/pagestuff/WallaceHobbs-Ch7.pdf) so you can start reading that too. 
+Aug26-28 	| Math review! Equality. The mighty power of parentheses: functions f(arguments, coordinates), derivatives. Derivative *operator*. Vectors. *Fields* of scalars and vectors. Nabla, the *vector derivative operator*. **Metric Units**: Crafted for us! Earth, Water, Hands (powers of 10). Length, mass, time. Velocity, momentum, force, pressure, energy, work or power, flux. *Pressure* is a flux of momentum, as is *stress*! | Mass budget of a control volume, time change = flux in - flux out. Extension to all intensive or *specific* (per unit mass) quantities. **Assignment due next Weds at 11:59pm** to be linked here. Browse the Feynman lectures on vectors, vector fields, & derivatives & integrals. 
+Week3|LABOR DAY | Perhaps TRANSPORT, treated as FLUX CONVERGENCE vs. ADVECTION. 
