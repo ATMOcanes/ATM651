@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<netcdf xmlns='http://www.unidata.ucar.edu/namespaces/netcdf/ncml-2.2'>
+  <aggregation type='union'>
+ 
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/pressure/uwnd.nc"/>
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/pressure/vwnd.nc"/>
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/pressure/hgt.nc"/>
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/pressure/air.nc"/>
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/pressure/rhum.nc"/>
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/pressure/shum.nc"/>
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/pressure/omega.nc"/>
+      <netcdf location="http://psl.noaa.gov/thredds/dodsC/Aggregations/ncep.reanalysis/surface/slp.nc"/>
+ 
+  </aggregation>
+</netcdf>
