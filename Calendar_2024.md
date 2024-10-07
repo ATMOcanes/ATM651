@@ -11,7 +11,7 @@ Week 6 (Sep 23-25)  | Reminder about grad grades, course goals (YOUR learning pr
 Week 7 (Sep 30-Oct 2) | **HW due end of day (or Weds on request)**, in class will answerQ/ do on board. Also let's see Thermal Wind in action: Helene interacting with a [cool-core upper Low](https://github.com/ATMOcanes/ATM651/blob/master/WH_chapter7/2023_Warm-coolCore_Vortices_structurelab.pptx). Please finish Ch7 reading, do 3 & respond to 1 annotations please. | Wrap up Wallace-Hobbs Chapter 7, mention ALL the important Words for next week. 
 Week 8 (Oct 7-9) | Review for midterm | Midterm (vocabulary test) - all of Ch7 and MKS units and kinematics and so on. Today or next week?  
 Week 9 (Oct 14-16) | FALL BREAK |  Midterm (delayed)? 
-Week 10 (Oct 21-23) | Midterm and HW3 back | Project idea bazaar/ brainstorms
+Week 10 (Oct 21-23) | Midterm-HW3 back **Discuss student questions, with timestamps** on concepts in vorticity [movies](http://web.mit.edu/hml/ncfmf.html) Parts 1&2,| Project idea bazaar/ brainstorms
 Week 11 (Oct 28-30) |Rest of semester: Minimal moist thermo, Scale separations, Budgets v. interps, Models (physical and empirical), Instabilities, Predictability, ...  |  
 Week 12 (Nov 4-6) | |  
 Week 13 (Nov 11-13) | |  
