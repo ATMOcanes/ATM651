@@ -11,8 +11,8 @@ Week 6 (Sep 23-25)  | Reminder about grad grades, course goals (YOUR learning pr
 Week 7 (Sep 30-Oct 2) | **HW due end of day (or Weds on request)**, in class will answerQ/ do on board. Also let's see Thermal Wind in action: Helene interacting with a [cool-core upper Low](https://github.com/ATMOcanes/ATM651/blob/master/WH_chapter7/2023_Warm-coolCore_Vortices_structurelab.pptx). Please finish Ch7 reading, do 3 & respond to 1 annotations please. | Wrap up Wallace-Hobbs Chapter 7, mention ALL the important Words for next week. 
 Week 8 (Oct 7-9) | Review for midterm | Vorticity videos: On your own screen. **Each person capture at least one time-stamp-specific question on vorticity in [movies](http://web.mit.edu/hml/ncfmf.html), Parts 1&2**.  
 Week 9 (Oct 14-16) | FALL BREAK |  **Discuss student questions on** vorticity [movies](http://web.mit.edu/hml/ncfmf.html) Parts 1&2
-Week 10 (Oct 21-23) | Midterm (delayed) Part I: vocabulary test (like 3 past exams) - on all of Ch7 and MKS units and kinematics and so on. Part II: Commit to memory and write down the Primitive Equations, as per handout. It's as good as a Shakespeare Sonnet, and as important.   | Project idea bazaar/ brainstorms
-Week 11 (Oct 28-30) |Rest of semester: Minimal moist thermo, Scale separations, Budgets v. interps, Models (physical and empirical), Instabilities, Predictability, ...  |  
+Week 10 (Oct 21-23) | Midterm (delayed) Part I: vocabulary test (like 3 past exams) - on all of Ch7 and MKS units and kinematics and so on. Part II: Commit to memory and write down the Primitive Equations, as per handout. It's as good as a Shakespeare Sonnet, and as important.   | HW3 and exams hand back. TRIVIUM: With Grammar & some Logic under our belts, turn to Rhetoric. Things people say to make sense and meaning (or - please not! non-sense and meaningless pathos). So: project ideas bazaar/ brainstorms.
+Week 11 (Oct 28-30) |Rest of semester: Essential moist thermo, Scale separations, Budgets v. interps, Models (physical and empirical), Instabilities, Predictability, ...  |  
 Week 12 (Nov 4-6) | |  
 Week 13 (Nov 11-13) | |  
 Week 14 (Nov 18-20) | |  
