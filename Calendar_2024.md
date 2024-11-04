@@ -12,12 +12,12 @@ Week 7 (Sep 30-Oct 2) | **HW due end of day (or Weds on request)**, in class wil
 Week 8 (Oct 7-9) | Review for midterm | Vorticity videos: On your own screen. **Each person capture at least one time-stamp-specific question on vorticity in [movies](http://web.mit.edu/hml/ncfmf.html), Parts 1&2**.  
 Week 9 (Oct 14-16) | FALL BREAK |  **Discuss student questions on** vorticity [movies](http://web.mit.edu/hml/ncfmf.html) Parts 1&2
 Week 10 (Oct 21-23) | Midterm (delayed) Part I: vocabulary test (like 3 past exams) - on all of Ch7 and MKS units and kinematics and so on. Part II: Commit to memory and write down the Primitive Equations, as per handout. It's as good as a Shakespeare Sonnet, and as important.   | HW3 and exams hand back. TRIVIUM: With Grammar & some Logic under our belts, turn to Rhetoric. Things people say to make sense and meaning (or - please not! non-sense and meaningless pathos). So: **get a project idea**. Frame: 1. Define/refine a question/curiosity. 2. Touch 3 salient lit. papers about it (connectedpapers, citation trees). 3. Make contact with data (IDV, [Jupyter](https://nbviewer.org/github/ATMOcanes/ATM651/tree/master/Jupyter_Notebooks_Python/)). 4. MAKE SENSE OF IT ALL, for all of us. Raise & satisfy a curiosity YOU feel. 
-Week 11 (Oct 28-30) |Rest of semester: Essential moist thermo, Scale separations, Budgets v. interps, Models (physical and empirical), Instabilities, Predictability, ...  |  
-Week 12 (Nov 4-6) | |  
+Week 11 (Oct 28-30) |  | 30,000 foot survey of equation sets. Warm air rising is [roundabout](https://github.com/ATMOcanes/ATM651/blob/master/Assembling_the_PEs/The7steps_warmair_rising_hydrostatic.pptx) in Primitive Equations, direct in Boussinesq $\rho = \rho_0$ or Anelastic $\rho = \rho_0(z only), good for convection or [buoyancy ("gravity") waves](https://github.com/ATMOcanes/ATM651/blob/master/Assembling_the_PEs/Gravitywaves.pptx). $ |  
+Week 12 (Nov 4-6) | Review Weds; six more classes + one last homework about them (attendance prop-up), from [mind map](https://github.com/ATMOcanes/ATM651/blob/master/Models_MindMaps/ATM%20651.fullmindmap.pdf). Essential moist thermo, Scale separations, Budgets v. Dyanmics, Models and Reanalyses, Instabilities, Predictability, ... Last few project emails/brainstorm/meetups so you can start.  |  
 Week 13 (Nov 11-13) | |  
 Week 14 (Nov 18-20) | |  
-Week 15 (Nov 25-27) |"zoom class required"? |  HOLIDAY
-Week 16 (Dec 2-4) | Project presentations | Project presentations 
+Week 15 (Nov 25-27) |"classes remote only, [zoomlink](https://miami.zoom.us/my/brianmapes)" |  HOLIDAY
+Week 16 (Dec 2-4) | LAST DAY OF CLASSES | <--Project presentations--> ? Finals 5-11 Dec
 Week 17 (Dec 9-11) |(me @AGU, it's over) |  
 
 
