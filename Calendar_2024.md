@@ -18,7 +18,7 @@ Week 13 (Nov 11-13) | [ppt on Instability and Metastability](https://github.com/
 Week 14 (Nov 18-20) | |  
 Week 15 (Nov 25-27) |"classes remote only, [zoomlink](https://miami.zoom.us/my/brianmapes)" |  HOLIDAY
 Week 16 (Dec 2-4) | LAST DAY OF CLASSES | <--Project presentations--> ? Finals 5-11 Dec
-Week 17 (Dec 9-11) |(me @AGU, it's over) |  
+Week 17 (Dec 9-11) |(me @AGU, it's over) |  OFFICIAL FINAL SLOT: 12/11/2024, Wednesday 11:00AM - 1:30PM
 
 
 
