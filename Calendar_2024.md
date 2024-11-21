@@ -17,7 +17,7 @@ Week 12 (Nov 4-6) | Review Weds; six more classes + one last homework about them
 Week 13 (Nov 11-13) | [ppt on Instability and Metastability](https://github.com/ATMOcanes/ATM651/blob/master/Soundings-Convection-MSEplots/MSEplots_ATM651_2023.pptx), key concepts/logic. Following last week: clarify/repeat how moist convection works in conserved-energy vs. mass profile graphs. But first, conceptually, glimpse how *momentum instability* works.| Lecture on models and assimilation [recording OOPS](https://tenor.com/search/monkey-washing-cat-gifs), with IDV bundles you could load yourself, [visualizing the assimilation game](https://miami.box.com/s/z4ej9znztgy0jh7xe8qcvptdd8c9w3n2), and all the various terms in the First Law [dynamics=transport, radiation LW and SW, turbulence, moist processes](https://miami.box.com/s/ucgjgra0zi6ya0s5p1iysvsc4cdfp854). 
 Week 14 (Nov 18-20) | One last **HW on vertically integrated transport**, due at end of project week. Looked at DSE-MSE-MSEsat plots and convective cloud photos. Began on prime-and-bar notation for scale separation, as example of primary-secondary analysis strategy (large scales *primary*, we want to predict in detail, small scales *secondary* we are contenty to treat statistically. | More on prime-and-bar notation.  
 Week 15 (Nov 25-27) |"classes remote only, [zoomlink](https://miami.zoom.us/my/brianmapes)" |  HOLIDAY
-Week 16 (Dec 2-4) | PRESENTATIONS: Matt and 4 others | PRESENTATIONS: 6 
+Week 16 (Dec 2-4) | PRESENTATIONS: Matt, Vanessa & 3 others | PRESENTATIONS: 6 
 
 
 
