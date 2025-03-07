@@ -22,4 +22,4 @@ Students may `Fork` this `repo` and `Clone` it to their machines.
 
 * Introduction to probability distributions, an accessible [Medium post](https://medium.com/cantors-paradise/the-waiting-paradox-an-intro-to-probability-distributions-97c0aedb8c1)
   
-
+Does this go into forks easily? 
