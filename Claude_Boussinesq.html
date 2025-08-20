@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px '.AppleSystemUIFontMonospaced'; color: #151518; -webkit-text-stroke: #151518; background-color: #ececf1}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px '.AppleSystemUIFontMonospaced'; color: #151518; -webkit-text-stroke: #151518; background-color: #ececf1; min-height: 17.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;Boussinesq Equations and Kinetic Energy Analysis in Atmospheric Dynamics&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script type="text/javascript" async</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>window.MathJax = {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tex: {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>inlineMath: [['$', '$'], ['\\(', '\\)']],</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>displayMath: [['$$', '$$'], ['\\[', '\\]']]</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Times New Roman', serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 800px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background-color: #ffffff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h1 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #2c3e50;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h2 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #34495e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 30px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid #bdc3c7;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding-bottom: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>h3 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 18px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #34495e;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 25px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.equation {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 20px 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.equation-number {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>float: right;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>p {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: justify;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.references {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 40px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.citation {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #2980b9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-decoration: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.author-info {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-style: italic;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #7f8c8d;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Boussinesq Equations and Kinetic Energy Analysis in Atmospheric Dynamics&lt;/h1&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="author-info"&gt;Graduate Course Material - Atmospheric Science&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;1. The Boussinesq Equations&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;The Boussinesq approximation provides a fundamental framework for analyzing atmospheric and oceanic flows where density variations are small but buoyancy effects remain significant. Under this approximation, density variations are neglected everywhere except in the gravitational term of the vertical momentum equation (Vallis, 2017). The governing equations in Cartesian coordinates $(x, y, z)$ with velocity components $(u, v, w)$ are:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{\partial u}{\partial t} + u\frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} + w\frac{\partial u}{\partial z} = -\frac{1}{\rho_0}\frac{\partial p}{\partial x} + F_u$$<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(1a)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{\partial v}{\partial t} + u\frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} + w\frac{\partial v}{\partial z} = -\frac{1}{\rho_0}\frac{\partial p}{\partial y} + F_v$$<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(1b)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{\partial w}{\partial t} + u\frac{\partial w}{\partial x} + v\frac{\partial w}{\partial y} + w\frac{\partial w}{\partial z} = -\frac{1}{\rho_0}\frac{\partial p}{\partial z} + b + F_w$$<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(1c)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} + \frac{\partial w}{\partial z} = 0$$<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(1d)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{\partial b}{\partial t} + u\frac{\partial b}{\partial x} + v\frac{\partial b}{\partial y} + w\frac{\partial b}{\partial z} = S_b$$<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(1e)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Here, $\mathbf{V} = (u, v, w)$ is the velocity vector, $p$ is the pressure perturbation, $\rho_0$ is the reference density, $b = -g(\rho - \rho_0)/\rho_0$ is the buoyancy with gravitational acceleration $g$, $\mathbf{F} = (F_u, F_v, F_w)$ represents frictional forces (including viscous and subgrid-scale effects), and $S_b$ accounts for buoyancy sources and sinks such as diabatic heating.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;2. Derivation of the Kinetic Energy Equation&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;The kinetic energy density is defined as $KE = \frac{1}{2}\rho_0|\mathbf{V}|^2 = \frac{1}{2}\rho_0(u^2 + v^2 + w^2)$. To derive its evolution equation, we multiply equations (1a-c) by $\rho_0 u$, $\rho_0 v$, and $\rho_0 w$ respectively, then sum them.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;2.1 Material Derivative Terms&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;The left-hand side of equation (1a) multiplied by $\rho_0 u$ gives:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\rho_0 u\frac{\partial u}{\partial t} + \rho_0 u^2\frac{\partial u}{\partial x} + \rho_0 uv\frac{\partial u}{\partial y} + \rho_0 uw\frac{\partial u}{\partial z}$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Using the identity $u\frac{\partial u}{\partial t} = \frac{1}{2}\frac{\partial u^2}{\partial t}$ and similar manipulations for the advective terms:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{\rho_0}{2}\frac{\partial u^2}{\partial t} + \frac{\rho_0}{2}\frac{\partial u^3}{\partial x} + \frac{\rho_0}{2}u^2\frac{\partial u}{\partial x} + \frac{\rho_0}{2}v\frac{\partial u^2}{\partial y} + \frac{\rho_0}{2}w\frac{\partial u^2}{\partial z}$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Similar expressions arise for the $v$ and $w$ components. After considerable algebra and using the continuity equation (1d), the complete kinetic energy equation becomes:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{\partial KE}{\partial t} + \frac{\partial}{\partial x}\left[\left(KE + \frac{p}{\rho_0}\right)u\right] + \frac{\partial}{\partial y}\left[\left(KE + \frac{p}{\rho_0}\right)v\right] + \frac{\partial}{\partial z}\left[\left(KE + \frac{p}{\rho_0}\right)w\right] = \rho_0 bw + \rho_0\mathbf{F}\cdot\mathbf{V}$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(2)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;This is the kinetic energy equation in flux form, where the terms on the left represent the local time rate of change and the divergence of kinetic energy flux (including pressure work), while the right-hand side contains the buoyancy production and frictional dissipation terms.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;3. Volume-Integrated Kinetic Energy Budget&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Integrating equation (2) over the entire fluid domain $\mathcal{V}$ and applying the divergence theorem, the flux terms vanish at appropriate boundaries (assuming no-flux or periodic boundary conditions). The volume-integrated kinetic energy equation becomes:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{d}{dt}[KE] = [bw] + [\mathbf{F}\cdot\mathbf{V}]$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(3)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;where $[Q] \equiv \int_{\mathcal{V}} \rho_0 Q \, dV$ denotes the mass-weighted volume integral. This fundamental result shows that:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;$[bw]$ is the kinetic energy source&lt;/strong&gt;: Positive buoyancy coupled with upward motion ($w &gt; 0$) generates kinetic energy through buoyant acceleration, while negative buoyancy with downward motion also contributes positively. This term represents the conversion of potential energy to kinetic energy.&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;$[\mathbf{F}\cdot\mathbf{V}]$ is the kinetic energy sink&lt;/strong&gt;: For typical dissipative processes, $\mathbf{F}\cdot\mathbf{V} &lt; 0$, representing the conversion of kinetic energy to internal energy through viscous dissipation and other frictional mechanisms.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;4. Modal Decomposition and Energy Budget&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Consider an orthonormal decomposition of the velocity and buoyancy fields. For a domain with appropriate boundary conditions, we can expand in Fourier modes:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\mathbf{V}(\mathbf{x},t) = \sum_{\mathbf{k}} \hat{\mathbf{V}}_{\mathbf{k}}(t) e^{i\mathbf{k}\cdot\mathbf{x}}, \quad b(\mathbf{x},t) = \sum_{\mathbf{k}} \hat{b}_{\mathbf{k}}(t) e^{i\mathbf{k}\cdot\mathbf{x}}$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(4)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;where $\mathbf{k} = (k_x, k_y, k_z)$ is the wavenumber vector. For planetary atmospheres, spherical harmonic expansions are more appropriate (Holton &amp; Hakim, 2013).&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;4.1 Modal Kinetic Energy Equation&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;The kinetic energy associated with each mode is $KE_{\mathbf{k}} = \frac{1}{2}\rho_0|\hat{\mathbf{V}}_{\mathbf{k}}|^2$. Setting aside transport terms temporarily, the evolution equation for each mode follows the same structure as equation (3):&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\frac{dKE_{\mathbf{k}}}{dt} = \text{Re}[\hat{b}_{\mathbf{k}}^*\hat{w}_{\mathbf{k}}] + \text{Re}[\hat{\mathbf{F}}_{\mathbf{k}}^*\cdot\hat{\mathbf{V}}_{\mathbf{k}}]$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(5)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;where $*$ denotes complex conjugation and Re[$\cdot$] takes the real part. This demonstrates that the fundamental energy balance—buoyancy production and frictional dissipation—applies at each scale independently when transport effects are neglected.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;5. Nonlinear Transport and Scale Interactions&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;The nonlinear advection terms, when written in advective form, are:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$(\mathbf{V}\cdot\nabla)\mathbf{V} = \left(u\frac{\partial}{\partial x} + v\frac{\partial}{\partial y} + w\frac{\partial}{\partial z}\right)\mathbf{V}$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(6)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;These nonlinear terms are responsible for energy transfer across different scales and wavenumbers, fundamentally altering the simple modal picture described above.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;5.1 Wavenumber vs. Scale&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;It is crucial to distinguish between &lt;em&gt;wavenumber&lt;/em&gt; and &lt;em&gt;scale&lt;/em&gt; as conceptual frameworks:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;Wavenumber ($k$)&lt;/strong&gt;: A measure in Fourier space representing spatial frequency, with units of inverse length. Higher wavenumbers correspond to more oscillatory structures.&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;Scale ($L \sim 1/k$)&lt;/strong&gt;: The characteristic physical size of flow features. Large scales correspond to low wavenumbers, and small scales to high wavenumbers.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;This distinction becomes important when discussing energy cascades: energy typically flows from large scales (low $k$) to small scales (high $k$) in three-dimensional turbulence, following Kolmogorov's theory (Frisch, 1995).&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;5.2 Frontogenesis and High Wavenumber Generation&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Frontogenesis provides a clear example of how large-scale flows generate small-scale features. The frontogenesis function $F$ measures the rate of strengthening of temperature or buoyancy gradients:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$F = -\frac{1}{2}\left[\left(\frac{\partial u}{\partial x} - \frac{\partial v}{\partial y}\right)^2 + \left(\frac{\partial u}{\partial y} + \frac{\partial v}{\partial x}\right)^2\right]|\nabla b|^2$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(7)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;When $F &gt; 0$, the horizontal strain field acts to intensify buoyancy gradients, creating increasingly sharp frontal zones. This process transfers energy from large scales (the synoptic-scale strain field) to progressively smaller scales (the sharpening front), ultimately requiring viscous dissipation or numerical diffusion to prevent infinite gradients (Hoskins, 1982).&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;5.3 Resonant Triad Interactions&lt;/h3&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;In the spectral representation, the nonlinear terms lead to interactions between different Fourier modes. A fundamental result from weakly nonlinear theory is that energy exchange occurs primarily through &lt;em&gt;resonant triads&lt;/em&gt;—sets of three wavenumbers $\mathbf{k}_1$, $\mathbf{k}_2$, and $\mathbf{k}_3$ satisfying the resonance condition:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="equation"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>$$\mathbf{k}_1 + \mathbf{k}_2 + \mathbf{k}_3 = \mathbf{0} \quad \text{and} \quad \omega_1 + \omega_2 + \omega_3 = 0$$</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;span class="equation-number"&gt;(8)&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;where $\omega_i$ are the corresponding frequencies (Nazarenko, 2011). These interactions can either:&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;Transfer energy to higher wavenumbers&lt;/strong&gt;: Two low-wavenumber modes interact to excite a high-wavenumber mode, contributing to the forward energy cascade.&lt;/li&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;&lt;strong&gt;Transfer energy to lower wavenumbers&lt;/strong&gt;: A high-wavenumber mode and a low-wavenumber mode interact to modify another low-wavenumber mode, though this is generally less efficient in three-dimensional flows.&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;The resonant triad mechanism provides the theoretical foundation for understanding how energy initially input at large scales (e.g., by baroclinic instability in the atmosphere) cascades through the spectrum to small scales where it is ultimately dissipated.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h2&gt;6. Implications for Atmospheric Dynamics&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;The kinetic energy framework developed here has profound implications for understanding atmospheric circulation. The balance between buoyancy production $[bw]$ and frictional dissipation $[\mathbf{F}\cdot\mathbf{V}]$ governs the overall energy budget of atmospheric motions. Meanwhile, the nonlinear transport terms redistribute this energy across scales, from the energy-containing range (synoptic scales, ~1000 km) through the inertial subrange down to the viscous dissipation scales (~mm).&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;p&gt;Understanding these processes is crucial for:&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;ul&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Parameterizing subgrid-scale processes in numerical weather prediction models&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Analyzing atmospheric predictability limits&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;li&gt;Understanding climate dynamics and energy transport&lt;/li&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="references"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;h2&gt;References&lt;/h2&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Frisch, U. (1995). &lt;em&gt;Turbulence: The Legacy of A. N. Kolmogorov&lt;/em&gt;. Cambridge University Press.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Holton, J. R., &amp; Hakim, G. J. (2013). &lt;em&gt;An Introduction to Dynamic Meteorology&lt;/em&gt; (5th ed.). Academic Press.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Hoskins, B. J. (1982). The mathematical theory of frontogenesis. &lt;em&gt;Annual Review of Fluid Mechanics&lt;/em&gt;, 14(1), 131-151.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Nazarenko, S. (2011). &lt;em&gt;Wave Turbulence&lt;/em&gt;. Springer-Verlag.&lt;/p&gt;</span></p>
+<p class="p2"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;p&gt;Vallis, G. K. (2017). &lt;em&gt;Atmospheric and Oceanic Fluid Dynamics: Fundamentals and Large-Scale Circulation&lt;/em&gt; (2nd ed.). Cambridge University Press.&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
